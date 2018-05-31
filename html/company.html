@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>关于我们</title>
+    <link rel="stylesheet" type="text/css" href="../css/font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/broke.css">
+	<style>
+		
+		.tbg {
+			background-image: none;
+			background-color: #f6f6f6;
+		}
+		.bg1 {
+			background-image: url(../img/subbanner_a01.jpg);
+			background-position: 0px 0px;
+			background-repeat: no-repeat;
+		}
+		
+		.bg2 {
+			background-image: url(../img/subbanner_j01.jpg);
+			background-position: 0px 0px;
+			background-repeat: no-repeat;
+		}
+		
+		.bg3 {
+			background-image: url(../img/subbanner_a03.jpg);
+			background-position: 0px 0px;
+			background-repeat: no-repeat;
+		}
+		
+		.bg4 {
+			background-image: url(../img/subbanner_a02.jpg);
+			background-position: 0px 0px;
+			background-repeat: no-repeat;
+		}
+		
+		.article_title {
+			margin-left: 105px;
+			margin-top: 200px;
+		}
+		
+		/* -------------------------------------
+		 * timeline
+		 * ------------------------------------- */
+		#timeline {
+		  list-style: none;
+		  margin: 50px 0 30px 120px;
+		  padding-left: 30px;
+		  border-left: 8px solid #eee9dc;
+		}
+		#timeline li {
+		  margin: 5px 0;
+		  position: relative;
+		}
+		#timeline p {
+		  margin: 0 0 15px;
+		}
+
+		.date {
+		  margin-top: -10px;
+		  top: 50%;
+		  left: -140px;
+		  font-size: 18px;
+		  color: #0178e0;
+		  font-weight: 900;
+		  line-height: 20px;
+		  position: absolute;
+		}
+
+		.circle {
+		  margin-top: -10px;
+		  top: 50%;
+		  left: -44px;
+		  width: 10px;
+		  height: 10px;
+		  background: #FFF;
+		  border: 5px solid #eee9dc;
+		  border-radius: 50%;
+		  display: block;
+		  position: absolute;
+		}
+
+		.content {
+		  max-height: 20px;
+		  padding: 50px 20px 0;
+		  border-color: transparent;
+		  border-width: 2px;
+		  border-style: solid;
+		  border-radius: 0.5em;
+		  position: relative;
+		  
+		}
+		.content:before, .content:after {
+		  content: "";
+		  width: 0;
+		  height: 0;
+		  border: solid transparent;
+		  position: absolute;
+		  pointer-events: none;
+		  right: 100%;
+		}
+		.content:before {
+		  border-right-color: inherit;
+		  border-width: 20px;
+		  top: 50%;
+		  margin-top: -20px;
+		}
+		.content:after {
+		  border-right-color: white;
+		  border-width: 17px;
+		  top: 50%;
+		  margin-top: -17px;
+		}
+		.content p {
+		  max-height: 0;
+		  color: transparent;
+		  text-align: justify;
+		  word-break: break-word;
+		  hyphens: auto;
+		  overflow: hidden;
+		}
+
+		label {
+		  font-size: 16px;
+		  position: absolute;
+		  z-index: 100;
+		  cursor: pointer;
+		  top: 24px;
+		  transition: transform 0.2s linear;
+		  color: #999;
+		  font-weight: 500;
+		}
+
+		.radio {
+		  display: none;
+		}
+		
+		/**
+
+		.radio:checked + .relative label {
+		  cursor: auto;
+		  transform: translateX(42px);
+		}
+		.radio:checked + .relative .circle {
+		  background: #0178e0;
+		}
+		.radio:checked ~ .content {
+		  max-height: 180px;
+		  max-width: 500px;
+		  border-color: #eee9dc;
+		  border-width: 5px;
+		  margin-right: 20px;
+		  transform: translateX(20px);
+		  transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
+		}
+		.radio:checked ~ .content p {
+		  max-height: 200px;
+		  color: #666;
+		  transition: color 0.3s linear 0.3s;
+		}
+		
+		**/
+		
+		/** Job **/
+		.hide {display: none;}
+		.job-list{width:750px;margin:20px auto;min-height:400px;}
+		.job-list li{position: relative;color:#4b505a;font-size:14px;padding-bottom:20px;margin-bottom:14px;border-bottom:1px solid #ececec;}
+		.job-list li .num{display:inline-block;height:20px;line-height:20px;text-align:center;width:20px;background: #0178e0;color:#fff;}
+		.job-list li .post{display: inline-block;width:180px;margin-left:40px;font-size:14px;}
+		.job-list li .place{display: inline-block;width:180px;}
+		.job-list li .amount{display: inline-block;width:180px;}
+		.job-list li .more{position: absolute;right:10px;top:4px;cursor: pointer;}
+		.down-detail .first{background: #ececec;margin-bottom:10px;padding:20px 30px;margin-top:10px;line-height:28px;}
+		.down-detail .second{background: #ececec;padding:20px 0;}
+		.down-detail .title{font-size:14px;font-weight: bold;padding-left:20px;position: relative;}
+		.down-detail .title .line{width:4px;height:16px;position: absolute;background: #0178e0;left:0;top:2px;}
+		.down-detail .detail-list{margin:10px 0;}
+		.down-detail .detail-list li{list-style: disc;margin-left:60px;line-height:10px;}
+		.contact-email{background: #0178e0;color:#fff;text-align: center;padding:8px 0;font-size:14px;}
+
+		.tab-select{background: #ececec;padding:14px 0;font-size:14px;width: 770px;}
+		.tab-select span{background: #fff;border:1px solid #d6d6d6;padding:6px 20px;cursor: pointer;margin-right:8px;}
+		.tab-select .active{border:0;background: #ececec;}
+		.main-detail{padding-top:0;}
+
+	</style>
+</head>
+
+<body>
+    <div class="divHead">
+        <div class="divFixedWidth">
+            <div class="divHeadLogo"><a href="#this"><span class="logo"></span</a></div>
+            <div class="divHeadMenu">
+                <ul>
+                    <li>
+                        <a class="iconfont icon-fenlei" href=""> <span>最优价格</span></a>
+                    </li>
+                    <li>
+                        <a class="iconfont icon-gupiao" href=""> <span>实时行情</span></a>
+                    </li>
+                    <li>
+                        <a class="iconfont icon-lishijilu" href=""> <span>历史行情</span></a>
+                    </li>
+                    <li>
+                        <a class="iconfont icon-fuzhi " href=""> <span>易通指数</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="divHeadRight"></div>
+        </div>
+    </div>
+
+    <div class="divMain loginMain">
+        <div class="divFixedWidth">
+
+            <div class="introduce_aside margin_t">
+                <div>关于我们</div>
+                <ul>
+                    <li class="active">
+                        <i>公司介绍</i>
+                    </li>
+                    <li>
+                        <i>发展历程</i>
+                    </li>
+                    <li>
+                        <i>诚聘英才</i>
+                    </li>
+                    <li>
+                        <i>联系我们</i>
+                    </li>
+					<li>
+                        <i>法律声明</i>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <div class="right-main margin_t">
+                    <div class="scope_img bg1">
+					
+						<div class="article_title"><div class="font_blue" style="font-size:18px"><b>上海易通电子商务有限公司</b>&nbsp;&nbsp;
+						<a href="#" style="font-size:14px" class="lang">中文</a>&nbsp;<span class="font_gray" style="font-size:14px">|</span >&nbsp;<a href="#" style="font-size:14px" class="lang">English</a></div>
+						<div class="font_gray">Etong E-commerce (Shanghai)</div></div>
+						
+						
+						<div id="chinese">
+						<p>上海易通电子商务有限公司（简称上海易通）是全亚洲规模最大的大宗商品经纪服务提供商，业务主要覆盖能源化工行业，年交易量达5000万吨，占流通市场约30%的份额，已服务超过5000家客户。我们的客户是全球范围内的能源和化工生产商、贸易商、下游制造企业等各垂直行业参与者，以及投资公司、资管公司、券商及投行。</p>
+<p>上海易通既是上海清算所大宗商品金融衍生品授权经纪公司（清算所ID 3015），也是新加坡交易所IDB（经纪商编码 S611）。截至目前，上海易通的成交量占上海清算所和新交所化工品掉期交易6成以上。鉴于上海易通在大宗商品金融衍生品交易上的优异表现，近几年先后获得由上海清算所颁发的“大宗商品清算经纪公司优秀奖”；浦发银行颁发的“开户贡献奖”、“市场流动性贡献奖”、“业务品种交易奖”、“创新争先奖”、“综合贡献奖”和“年度贡献奖”；以及新交所颁发的“最活跃MEG经纪商奖”。</p>
+<p>目前易通撮合业务涉及现货交易、上清所掉期、新交所SWAP和自贸区化工四个板块，主要交易乙二醇、甲醇、苯乙烯、纯苯、甲苯和二甲苯等产品。
+						</p>
+						</div>
+						
+						<div id="english" style="display:none;">
+						<p>
+						Etong E-commerce (Shanghai) is a professional and leading bulk commodity brokerage service provider in Asia. Its business mainly based on energy and chemicals sectors, with over 50 million tons annual trading volume. Etong also occupied about 30% chemicals trading market share and serivced over 5,000 clients till now. Etong’s clients cover producers, traders and downstream manufacturers among the global energy and chemical market, also with the investment companies, capital management companies, securities companies and investment banks.</p>
+
+<p>Etong is the certified bulk commodity brokers both by Shanghai Clearing House (ID: 3015) and SGX (IDB code S611). So far, Etong accounted more than 60% of the turnover in Shanghai Clearing House and SGX chemical swap. In view of the outstanding performance of Etong, it had successive acquisition the “The Excellent Broker Award in Commodities Clearing” by Shanghai Clearing House, the “Most Active MEG Inter-dealer Broker 2017” by SGX, “Market fluidity contribution Award” “Comprehensive contribution Award” ,etc. by SPD Bank.</p>
+
+<p>Currently, Etong's brokerage involves four plates, which are spots, SICX, swaps in Shanghai Clearing House and SGX，it mainly focused on MEG,  MEOH, SM, BZ, Toluene and MX.</p>
+						</div>
+						
+						<img src="../img/etong2.jpg" alt="">
+						
+						
+<br><br>
+                    </div>
+                </div>
+                <div class="right-main1 margin_t">
+
+                        <div class="scope_img bg4">
+							<div style="margin-top:200px;margin-left: 105px;">
+								
+								<ul id='timeline'>
+								  <li class='work'>
+									<input class='radio' id='work9' name='works' type='radio' checked>
+									<div class="relative">
+									  <label for='work9'>2010年7月,上海易通正式成立，为易贸化工集团全资子公司</label>
+									  <span class='date'>2010年</span>
+									  <span class='circle'></span>
+									</div>
+									<div class='content'>
+									  <p>
+										2010年7月,上海易通正式成立，为易贸化工集团全资子公司
+									  </p>
+									</div>
+								  </li>
+								  <li class='work'>
+									<input class='radio' id='work8' name='works' type='radio'>
+									<div class="relative">
+									  <label for='work8'>化工交易品类持续增加，进入油气和有色领域</label>
+									  <span class='date'>2011年</span>
+									  <span class='circle'></span>
+									</div>
+									<div class='content'>
+									  <p>
+										化工交易品类持续增加，进入油气和有色领域
+									  </p>
+									</div>
+								  </li>
+								  <li class='work'>
+									<input class='radio' id='work7' name='works' type='radio'>
+									<div class="relative">
+									  <label for='work7'>推出人民币远期现货合约，自此远期交易新模式快速发展</label>
+									  <span class='date'>2012年</span>
+									  <span class='circle'></span>
+									</div>
+									<div class='content'>
+									  <p>
+										推出人民币远期现货合约，自此远期交易新模式快速发展
+									  </p>
+									</div>
+								  </li>
+								  <li class='work'>
+									<input class='radio' id='work6' name='works' type='radio'>
+									<div class="relative">
+									  <label for='work6'>累计合作客户数突破3000家</label>
+									  <span class='date'>2013年</span>
+									  <span class='circle'></span>
+									</div>
+									<div class='content'>
+									  <p>
+										累计合作客户数突破3000家
+									  </p>
+									</div>
+								  </li>
+								  <li class='work'>
+									<input class='radio' id='work5' name='works' type='radio'>
+									<div class="relative">
+									  <label for='work5'>年度成交量突破2000万吨</label>
+									  <span class='date'>2014年</span>
+									  <span class='circle'></span>
+									</div>
+									<div class='content'>
+									  <p>
+										年度成交量突破2000万吨
+									  </p>
+									</div>
+								  </li>
+								  <li class='work'>
+									<input class='radio' id='work4' name='works' type='radio'>
+									<div class="relative">
+									  <label for='work4'>获得上海清算所场外衍生品经纪资质及新加坡交易所IDB资质<br>
+									  上海自贸区液化品国际交易中心正式获批，同年通过验收</label>
+									  <span class='date'>2015年</span>
+									  <span class='circle'></span>
+									</div>
+									<div class='content'>
+									  <p>
+										获得上海清算所场外衍生品经纪资质及新加坡交易所IDB资质<br>
+       上海自贸区液化品国际交易中心正式获批，同年通过验收
+
+									  </p>
+									</div>
+								  </li>
+								  
+								  <li class='work'>
+									<input class='radio' id='work3' name='works' type='radio'>
+									<div class="relative">
+									  <label for='work3'>构建多层次商品市场，易贸化工集团联结共赢，进入新易贸时代</label>
+									  <span class='date'>2016年</span>
+									  <span class='circle'></span>
+									</div>
+									<div class='content'>
+									  <p>
+										构建多层次商品市场，易贸化工集团联结共赢，进入新易贸时代
+
+									  </p>
+									</div>
+								  </li>
+								  
+								  <li class='work'>
+									<input class='radio' id='work2' name='works' type='radio'>
+									<div class="relative">
+									  <label for='work2'>获上海清算所颁发的大宗商品清算经纪公司优秀奖</label>
+									  <span class='date'>2017年</span>
+									  <span class='circle'></span>
+									</div>
+									<div class='content'>
+									  <p>
+										获上海清算所颁发的大宗商品清算经纪公司优秀奖
+
+									  </p>
+									</div>
+								  </li>
+								  
+								  <li class='work'>
+									<input class='radio' id='work1' name='works' type='radio'>
+									<div class="relative">
+									  <label for='work1'>获新加坡交易所颁发的最活跃MEG经纪商奖</label>
+									  <span class='date'>2018年</span>
+									  <span class='circle'></span>
+									</div>
+									<div class='content'>
+									  <p>
+										获新加坡交易所颁发的最活跃MEG经纪商奖
+
+									  </p>
+									</div>
+								  </li>
+								  
+								</ul>
+
+
+
+							</div>
+        
+                        </div>
+                </div>
+                <div class="right-main2 margin_t">
+
+                        <div class="scope_img bg2">
+						
+						
+						<div class="tab-select" style="margin-top: 200px; margin-left:90px;">
+							<span class="active">招聘岗位</span>
+						</div>
+						
+            <ul class="job-list">
+                <li>
+                    <span class="num">1</span>
+                    <strong class="post">交易顾问</strong>
+                    <span class="place">工作地点：<span>上海</span></span>
+                    <span class="amount">招聘人数：<span>3</span>人</span>
+                    <div class="more"><i class="iconfont icon-sanheng"></i>&nbsp;更多</div>
+                    <div class="down-detail hide">
+                        <div class="first">
+                            <div>部门：交易部</div>
+                            <div>
+                                <span>工作地点：上海</span>&nbsp;
+                                <span>招聘人数：3人</span>
+                            </div>
+                        </div>
+                        <p id="test">交易顾问</p>
+                        <div class="second">
+                            <div class="title"><span class="line"></span>岗位职责</div>
+                            <ul class="detail-list">
+                                <li>负责在大宗化工品领域中为客户提供交易服务。</li>
+                                <li>把握市场行情，深入挖掘买卖双方的交易需求。</li>
+                                <li>通过电话、QQ、交易系统软件等工具与客户保持联系，有效促成客户的交易，完成业绩指标。</li>
+                                <li>定期维护和巩固核心客户的关系。</li>
+                                <li>进一步开发潜在的客户资源。</li>
+								<li>对市场和客户的相关情况进行分析总结，完成相关工作文档的整理。</li>
+								<li>及时完成上级交办的相关事务。</li>
+                            </ul>
+                            <div class="title">任职要求</div>
+                            <ul class="detail-list">
+                                <li>良好的沟通能力、抗压能力、逻辑思维能力；</li>
+                                <li>把握市场行情，深入挖掘买卖双方的交易需求；</li>
+                                <li>1年以上销售相关工作经验；</li>
+								<li>热爱销售工作，性格外向，自信乐观。</li>
+                            </ul>
+                            <div class="contact-email">请将简历投递至：hr-recruit@shcem.com</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span class="num">2</span>
+                    <strong class="post">单证</strong>
+                    <span class="place">工作地点：<span>上海</span></span>&nbsp;
+                    <span class="amount">招聘人数：<span>3</span>人</span>
+                    <div class="more"><i class="iconfont icon-sanheng"></i>&nbsp;更多</div>
+                    <div class="down-detail hide">
+                        <div class="first">
+                            <div>部门：交易部</div>
+                            <div>
+                                <span>工作地点：上海</span>
+                                <span>招聘人数：3人</span>
+                            </div>
+                        </div>
+                        <p id="test">单证</p>
+                        <div class="second">
+                            <div class="title"><span class="line"></span>岗位职责</div>
+                            <ul class="detail-list">
+                                <li>负责内外贸整套业务流程的跟踪，包括合同，LC、单据等。</li>
+                                <li>根据业务执行的进程，做好登记管理，配合内部审批流程。</li>
+                                <li>与客户及时沟通订单进展情况。</li>
+                                <li>负责业务对帐、各类文件、单据、资料的归档。</li>
+                            </ul>
+                            <div class="title">任职要求</div>
+                            <ul class="detail-list">
+                                <li>本科及以上学历，国际贸易或相关专业,具备英语运用能力。</li>
+                                <li>熟悉外贸进出口流程以及国际贸易法规和术语。</li>
+                                <li>有良好的团队合作精神，能够与各个部门进行互相配合。</li>
+								<li>具有良好的执行能力。</li>
+                            </ul>
+                            <div class="contact-email">请将简历投递至：hr-recruit@shcem.com</div>
+                        </div>
+                    </div>
+                </li>
+                
+            </ul>
+                        </div>
+						
+						
+                </div>
+                <div class="right-main3 margin_t">
+                    <div class="scope_img bg3">
+					
+					<p style="margin-top:200px;font-size:16px;">易通重视在各个渠道客户，潜在客户，媒体以及整个社会保持沟通。鉴于易通的各大职能团队的专业化分工为不同行业的客户提供服务，为确保您的垂询和建议有效地送达易通，您可以选择在多个沟通渠道与易通保持联系。
+					</p>
+					<br>
+
+					<p class="font_gray">                     
+						<b>热&nbsp;&nbsp;线</b>：021-5155 0188<br>
+						<b>邮&nbsp;&nbsp;箱</b>：<span class="font_blue">etong@cbichina.com</span><br>
+						<b>地&nbsp;&nbsp;址</b>：上海市长宁区金钟路999号C座易贸大楼7楼<br>
+						<b>邮&nbsp;&nbsp;编</b>：200335<br>		
+					</p>
+					<br><br>
+
+                    </div>
+                </div>
+				<div class="right-main4 margin_t">
+                    <div class="top-title">
+                        <span>法律声明</span>
+                    </div>
+                    <div class="scope_img">
+
+                        <br><P align="center" class="font_blue" style="font-size:18px"><b>法律声明</b></P><br>
+
+<p class="p_indent">   本网站所提供的各项内容、服务的所有权、运作权、最终解释权归上海易通电子商务有限公司（以下简称本公司）所有。以下条款适用于您使用上海易通电子商务有限公司网站www.etongchina.com/www.enmore.cn（统称为“本网站”）</p>
+<p class="p_indent"> 在使用本网站各项服务前，请您务必仔细阅读并透彻理解本声明。如果您使用本网站，您的使用行为将被视为对本声明全部内容的认可。</P>
+<P><b>一、知识产权声明</b></p>
+<p class="p_indent"> 除特别说明或者法律另有特别规定者外，上海易通电子商务有限公司是本网站及其中所刊登全部资料、信息的知识产权的唯一所有人。本网站所刊登的全部资料包括但不限于网站架构、程序设计、页面图文信息，本站首页及各频道的专题内容等。任何单位或者个人不得将本网站的任何知识产权对象进行任何目的的使用。不得以任何方式、以任何文字对本网站资料作全部和局部复制、转载、引用和链接。任何违反本网站知识产权声明的行为，本网站保留进一步追究法律责任的权利。
+任何单位或个人认为通过本网站网页内容可能涉嫌侵犯其著作权，应该及时向我们提出书面权利通知，并提供身份证明、权属证明及详细侵权情况证明。我们收到上述法律文件后，将会依法尽快处理。</p>
+<P><b>二、隐私权保护声明</b></p>
+<p class="p_indent"> 本网站尊重并保护所有使用本网站平台服务用户的个人隐私权。为了给您提供更准确、更有个性化的服务，本网站会按照本隐私权政策的规定使用和披露您的个人信息，但本网站将以高度的勤勉、审慎义务对待这些信息。除本隐私权政策另有规定外，在未征得您事先许可的情况下，本网站不会将这些信息对外披露或向第三方提供。本网站不时更新本隐私权政策。您在同意本网站服务协议之时，即视为您已经同意本隐私权政策全部内容。本隐私权政策属于本网站服务协议不可分割的一部分，请您务必仔细阅读。</p>
+<P><b>（一）个人资料的收集</b></p>
+<p class="p_indent"> 本网站仅在与资讯项目有关的合法目的下，并经用户同意，以合法的方式收集必要的用户个人资料。本网站有可能根据收集到的用户姓名、地址、电话号码、电子邮件等信息向用户发送免费的信息宣传资料，或根据用户留下的真实有效的联系方式主动向用户发起呼叫，与用户联系。由于用户自行处置宣传信息或不接听我方电话而可能遭受的损失，我公司概不承担责任。用户在本网站注册时，须依注册内容之提示提供用户本人及单位的真实、准确、完整信息，并保证个人及单位资料的及时更新。因用户提供个人及单位信息不准确、不完整或未及时更新而可能遭受的任何损害，本公司不承担任何责任。因用户提供个人及单位信息不准确、不完整或未及时更新给本公司造成损失的，本公司保留追偿的权利。</P>
+<P><b>（二）个人资料的使用</b></p>
+<p class="p_indent"> 本公司有权为内部经营、管理、统计等目的使用您提供的个人及单位资料，包括但不限于：日常管理本公司提供给会员的服务及产品、监控本网站的安全使用、内部调研、对来访数据进行统计和研究;促进更新供会员享用的服务和产品;确认核对联络和消费名单、为宣传推广目的;为解决争议、排除纠纷和执行本法律声明目的等。</P>
+<P><b>（三）个人资料的披露</b></p>
+<p class="p_indent"> 本网站将采取合理的安全手段保护用户提供的个人及单位信息，在未得到用户许可之前，本网站不会擅自将用户信息披露给任何无关的第三方，但涉及下列情形之一的除外：</P>
+<P>1、权力机关依照法定程序要求提供。<br>
+2、为公共安全之目的。<br>
+3、由于用户对自身信息保密不当，从而导致用户资料的泄露。<br>
+4、由于网络线路、黑客攻击、计算机病毒等原因造成的资料泄露、丢失、被盗用或被篡改等。<br>
+5、为了保护本网站其他用户更为重要的权利或财产。<br>
+6、其他特殊或紧急情况。</P>
+<P><b>三、免责声明</b></p>
+<p class="p_indent"> 本网站仅为方便访问而提供他方网站的链接，并非是对链接网站的使用及其登载商品/服务等进行推举，并不意味着本网站与所链接网站的公司、个人之间有着联合、协作等特殊关系，也并不表示本网站认可或承担其他网站内容或使用上的责任。本网站对其合法性概不负责，亦不承担任何法律责任。
+本网站发布信息目的在于传播更多信息，与本网站立场无关。本网站所提供的信息（包括但不限于文字、数据及图表），只供参考之用。本网站不保证信息的准确性、有效性、及时性和完整性等。本网站会对信息进行必要的核查(筛选)，但最终对信息的合法性、准确性、真实性不承担任何法律责任。
+在任何情况下，本网站及上海易通电子商务有限公司对使用本网站所造成的任何直接或间接损失均不承担责任，使用本网站的行为包括但不限于利用本网站所发布信息进行交易、投资以及连接本网站所包含的的第三方链接等行为。使用本网站及本网站信息的风险，由使用者自己承担。
+如任何单位或个人认为本网站网页内容（包括但不限于本网站会员发布的商品信息）可能涉嫌侵犯其合法权益，应该及时向本网站提出书面权利通知，并提供身份证明、权属证明、具体链接（URL）及详细侵权情况证明。本网站在收到上述法律文件后，将会依法尽快移除相关涉嫌侵权的内容。本网站不对会员所发布的信息之删除或储存失败负责。</p>
+
+<br><br>
+
+
+                    </div>
+                </div>
+            </div>
+        <div style="clear:both" class="margin_b"></div>
+		</div>
+    </div>
+    <div class="divFootMenu">
+        <div class="divFixedWidth">
+            <a href="#">公司简介</a>
+            <span>|</span>
+            <a href="#">发展历程</a>
+            <span>|</span>
+            <a href="#">诚聘英才</a>
+            <span>|</span>
+            <a href="#">联系我们</a>
+            <span>|</span>
+            <a href="#"> 法律声明</a>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <a href="#">友情链接</a>
+            <a href="#">易贸集团</a>
+            <a href="#">上海自贸区</a>
+            <a href="#">上海化交</a>
+        </div>
+    </div>
+    <div class="divFoot">
+        <div class="divFixedWidth">
+            Copyright 2018 ENMORE 易贸 沪ICP备10003311号-12
+        </div>
+    </div>
+    <script src="../js/lib/jquery-3.3.1.min.js"></script>
+    <script src="../js/utils/emaiBase.js"></script>
+    <script src="../js/utils/layout.js"></script>
+	<script lang="javascript">
+		$(function(){
+		
+		$('.introduce_aside > ul > li').click(function(){
+			$(this).addClass('active').siblings().removeClass('active')
+			if($($('.introduce_aside > ul > li')[0]).hasClass('active')){
+				$('.right-main').show().siblings().hide()
+			}
+			if($($('.introduce_aside > ul > li')[1]).hasClass('active')){
+				$('.right-main1').show().siblings().hide()
+			}
+			if($($('.introduce_aside > ul > li')[2]).hasClass('active')){
+				$('.right-main2').show().siblings().hide()
+			}
+			if($($('.introduce_aside > ul > li')[3]).hasClass('active')){
+				$('.right-main3').show().siblings().hide()
+			}
+			if($($('.introduce_aside > ul > li')[4]).hasClass('active')){
+				$('.right-main4').show().siblings().hide()
+			}
+		})
+		
+		$('.lang').click(function(){
+			$(this).addClass('font_blue').siblings().removeClass('font_blue')
+			if($($('.lang')[0]).hasClass('font_blue')){
+				$('#chinese').show();
+				$('#english').hide();
+				
+			}
+			if($($('.lang')[1]).hasClass('font_blue')){
+				$('#chinese').hide();
+				$('#english').show();
+			}
+			
+		})
+		
+		$(".job-list").on('click','.more',function()
+        {
+            if($(this).parent().find(".down-detail").is(":hidden"))
+            {
+                $(this).parent().find(".down-detail").show();
+            }
+            else {
+                $(this).parent().find(".down-detail").hide();
+            }
+
+
+        });
+
+
+        $(".tab-select span").click(function()
+        {
+            $(".tab-select span").removeClass("active");
+            $(this).addClass("active");
+        });
+
+	})
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+.margin_t {
+  margin-top: 20px;
+}
+
+.margin_b {
+  margin-bottom: 20px;
+}
+
+.p_indent {
+	text-indent:25px
+}
+
+.icon_font {
+	font-size: 16px;
+	color: #0178e0;
+	margin-right: 6px;
+	font-weight: bold;
+}
+
+.contact_cell {
+	padding:10px;
+	border-top:1px solid #ccc;
+	width: 375px;
+	font-size: 14px;
+}
+
+.font_gray {
+	color: #999;
+}
+
+.font_blue {
+	color: #0178e0;
+}
+
+.introduce_aside {
+  width: 190px;
+  border: 1px solid #ececec;
+  float: left;
+}
+.introduce_aside div {
+  height: 85px;
+  line-height: 85px;
+  font-size: 22px;
+  padding-left: 42px;
+  border-bottom: 1px solid #ececec;
+  color: #0178e0;
+  font-weight: 800;
+  background-color: #ececec;
+  cursor: default;
+}
+.introduce_aside ul li {
+  height: 35px;
+  padding-left: 45px;
+  line-height: 35px;
+  border-bottom: 1px solid #ececec;
+  background-color: #fff;
+  cursor: pointer;
+}
+.introduce_aside ul li i {
+  font-size: 14px;
+  font-style: normal;
+}
+.introduce_aside ul li:hover {
+  background-color: #f6f6f6;
+}
+.introduce_aside ul li:hover i {
+  color: #0178e0;
+}
+.introduce_aside ul li.active {
+  background-color: #0178e0;
+}
+.introduce_aside ul li.active i {
+  color: #fff;
+}
+.introduce_aside ul li.active:hover {
+  background-color: #0178e0;
+}
+.introduce_aside ul li.active:hover i {
+  color: #fff;
+}
+.right-main,
+.right-main1,
+.right-main2,
+.right-main3,
+.right-main4 {
+  display: none;
+  float: right;
+  width: 970px;
+}
+.right-main .top-title,
+.right-main1 .top-title,
+.right-main2 .top-title,
+.right-main3 .top-title, 
+.right-main4 .top-title{
+  background-image: url(../img/titlebg.jpg);
+  height: 50px;
+  margin-bottom: 0px;
+}
+.right-main .top-title span,
+.right-main1 .top-title span,
+.right-main2 .top-title span,
+.right-main3 .top-title span,
+.right-main4 .top-title span {
+  margin-left: 22px;
+  
+  /*color: #0178e0;*/
+  color: #fff;
+  font-size: 15px;
+  line-height: 50px;
+  font-weight: bold;
+}
+.right-main .scope_img,
+.right-main1 .scope_img,
+.right-main2 .scope_img,
+.right-main3 .scope_img,
+.right-main4 .scope_img {
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ececec;
+  background-color: #fff;
+}
+.right-main .scope_img img,
+.right-main1 .scope_img img,
+.right-main2 .scope_img img,
+.right-main3 .scope_img img,
+.right-main4 .scope_img img {
+  width: 600px;
+  display: block;
+  margin: 15px auto;
+}
+.right-main .scope_img p,
+.right-main1 .scope_img p,
+.right-main2 .scope_img p,
+.right-main3 .scope_img p,
+.right-main4 .scope_img p {
+  font-size: 14px;
+  /*text-indent: 26px;*/
+  margin-bottom: 10px;
+  width: 740px;
+  line-height: 28px;
+  margin: 10px auto;
+}
+.right-main .scope_img p i,
+.right-main1 .scope_img p i,
+.right-main2 .scope_img p i,
+.right-main3 .scope_img p i,
+.right-main4 .scope_img p i {
+  position: relative;
+  width: 14px;
+}
+.right-main .scope_img p i::before,
+.right-main1 .scope_img p i::before,
+.right-main2 .scope_img p i::before,
+.right-main3 .scope_img p i::before,
+.right-main4 .scope_img p i::before {
+  position: absolute;
+  left: -22px;
+  top: -12px;
+}
+.right-main {
+  display: block;
+}
+
+.card_main {
+	margin-right: 20px;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	width: 220px;
+	height: 120px;
+	box-shadow: 4px 8px 5px rgba(0, 0, 0, 0.2);
+	text-align: left;
+	background-color: #0178e0;
+	display: inline-block;
+}​
+
+
+
+.card_arrow {
+	background-color:red;
+	position: relative;
+	width: 20px;
+        left:180px;
+         top:0px;
+}
+
+.card_text{
+	position: relative;
+	width: 150px;
+        left:20px;
+         top:30px;
+}
+
+
+
+

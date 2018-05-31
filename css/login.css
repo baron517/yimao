@@ -1,0 +1,11 @@
+.loginMain{background: url("../img/loginBg.png") no-repeat;vertical-align:middle;}
+.loginMain .divFixedWidth{position:relative;background-color: transparent}
+.divLogin{width:410px;height:410px;background: white;margin-left:159px; position:absolute;margin-top:15%}
+.divLogin .divLoginTitle{height:80px;border-bottom: 1px solid #dadada;}
+.divLogin .divLoginTitle span{font-weight:bold;font-size:17px;color:#0178e0;margin-top:38px;margin-left:70px;display:inline-block  }
+.divLogin .divLoginContent{width:270px;margin-left:auto;margin-right:auto; }
+.divLogin .divLoginContent .divInput{height:70px;border-bottom: 1px solid #dadada;}
+.divLogin .divLoginContent .divInput input{width:270px;border:0px;margin-top:40px;font-size:15px;color:#333}
+.divLogin .divLoginContent .errorMsg{color:red;text-align: center;margin-top:20px;}
+.divLogin .divLoginContent .divBtn{text-align: center;margin-top:20px;}
+.divLogin .divLoginContent .divOther{margin-top:30px;}

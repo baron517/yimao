@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>实时行情</title>
+    <link rel="stylesheet" type="text/css" href="../css/font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+</head>
+
+<body>
+    <div class="divHead">
+        <div class="divFixedWidth">
+            <div class="divHeadLogo"><a href="#this"><span class="logo"></span</a></div>
+            <div class="divHeadMenu">
+                <ul>
+                    <li>
+                        <a class="iconfont icon-shouye" href="./bestPrice.html"> <span>首页</span></a>
+                    </li>
+                    <li>
+                        <a class="iconfont icon-fenlei" href="./bestPrice.html"> <span>最优价格</span></a>
+                    </li>
+                    <li class="active">
+                        <a class="iconfont icon-gupiao" href="./realtimeQuotes.html"> <span>实时行情</span></a>
+                    </li>
+                    <li>
+                        <a class="iconfont icon-lishijilu" href="./historyQuantity.html"> <span>历史行情</span></a>
+                    </li>
+                    <li>
+                        <a class="iconfont icon-fuzhi " href="./indexNumber.html"> <span>易通指数</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="divHeadRight">
+                <ul>
+                    <li class="pr"><a href="myCenter.html"><i class="personage"></i><i class="yes"></i></a></li>
+                    <li><a href="#this"><i class="exit"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="divMain">
+        <div class="divFixedWidth">
+            <br>
+            <div class="btnGroup">
+                <span class="btn iconfont icon-huifumorenbuju active" style="width:40px;" id="btnRestoreAll"></span>
+                <span class="btn iconfont icon-sanheng" style="width:40px;" id="btnMaxAll"></span>
+                <span class="btn iconfont icon-minimum" style="width:40px;" id="btnMinAll"></span>
+                <span class="btn iconfont icon-zhankai2" style="width:40px;" id="btnSpreadAll"></span>
+            </div>
+            &nbsp;&nbsp;<button class="btn btn-primary iconfont icon-shezhi" type="button" id="btnSetQuotes"> 行情设置</button>&nbsp;&nbsp;
+            <button class="btn btn-default iconfont icon-jia" type="button" id="btnAddBlockPrice"> 添加实时价差窗口</button>
+            <br><br>
+            <div id="divBlockRoot">
+                <div class="divBlock divBlockQuotes sortable">
+                    <div class="title">
+                        <i class="iconLeft iconfont icon-shezhi ignore-elements"></i>
+                        <span class="spanTitle ">现货（纯苯）</span>
+                        <span class="grey ">详情请询</span>
+                        <span>021-5155 XXXX</span>
+                        <div class="fr ignore-elements">
+                            <i class="iconfont icon-minimum" title="最小化"></i>
+                            <i class="iconfont icon-zuidahua1" title="最大化"></i>
+                            <i class="iconRight iconfont icon-guanbi" title="删除"></i>
+                        </div>
+                    </div>
+                    <div class="divFixedTitle">
+                        <ul>
+                            <li>币种</li>
+                            <li>交易期限</li>
+                            <li>方向</li>
+                            <li>数量</li>
+                            <li>价格</li>
+                            <li>时间</li>
+                        </ul>
+                    </div>
+                    <div class="content ">
+                        <table class="tbFixedTitle watermarkSpecial" width="100%">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="blue">人民币</td>
+                                    <td>1803</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">人民币</td>
+                                    <td>1803</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                </tr>
+                                <tr class="bottomBlue">
+                                    <td class="blue">人民币</td>
+                                    <td>1803</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">人民币</td>
+                                    <td>1804</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                </tr>
+                                <tr class="bottomBlue">
+                                    <td class="blue">人民币</td>
+                                    <td>1804</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">人民币</td>
+                                    <td>1805</td>
+                                    <td class="red">卖</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">人民币</td>
+                                    <td>1805</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">人民币</td>
+                                    <td>1805</td>
+                                    <td class="red">卖</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">人民币</td>
+                                    <td>1805</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">人民币</td>
+                                    <td>1805</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">人民币</td>
+                                    <td>1805</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">人民币</td>
+                                    <td>1805</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="divBlock divBlockQuotes sortable">
+                    <div class="title">
+                        <i class="iconLeft iconfont icon-shezhi ignore-elements"></i>
+                        <span class="spanTitle">掉期（甲醇）</span>
+                        <span class="grey ">详情请询</span>
+                        <span>021-5155 XXXX</span>
+                        <div class="fr ignore-elements">
+                            <i class="iconfont icon-minimum" title="最小化"></i>
+                            <i class="iconfont icon-zuidahua1" title="最大化"></i>
+                            <i class="iconRight iconfont icon-guanbi" title="删除"></i>
+                        </div>
+                    </div>
+                    <div class="divFixedTitle">
+                        <ul>
+                            <li>币种</li>
+                            <li>交易期限</li>
+                            <li>方向</li>
+                            <li>数量</li>
+                            <li>价格</li>
+                            <li>时间</li>
+                        </ul>
+                    </div>
+                    <div class="content">
+                        <table class="tbFixedTitle watermarkSpecial" width="100%">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="blue">人民币</td>
+                                    <td>1803</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">人民币</td>
+                                    <td>1803</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                </tr>
+                                <tr class="bottomBlue">
+                                    <td class="blue">人民币</td>
+                                    <td>1803</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">人民币</td>
+                                    <td>1804</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                </tr>
+                                <tr class="bottomBlue">
+                                    <td class="blue">人民币</td>
+                                    <td>1804</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">人民币</td>
+                                    <td>1805</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">人民币</td>
+                                    <td>1805</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">人民币</td>
+                                    <td>1805</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">人民币</td>
+                                    <td>1805</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">人民币</td>
+                                    <td>1805</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">人民币</td>
+                                    <td>1805</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">人民币</td>
+                                    <td>1805</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="divBlock divBlockColor sortable">
+                    <div class="title">
+                        <i class="iconLeft iconfont icon-shezhi ignore-elements"></i>
+                        <span class="spanTitle">实时价差</span>
+                        <span class="grey">详情请询</span>
+                        <span>021-5155 XXXX</span>
+                        <div class="fr ignore-elements">
+                            <i class="iconfont icon-minimum" title="最小化"></i>
+                            <i class="iconfont icon-zuidahua1" title="最大化"></i>
+                            <i class="iconRight iconfont icon-guanbi" title="删除"></i>
+                        </div>
+                    </div>
+                    <div class="divFixedTitle">
+                        <ul>
+                            <li>配对</li>
+                            <li>最新价差</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="content">
+                        <table class="tbFixedTitle watermarkSpecial" width="100%">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="blue">MEG人民币 3月 - MEG人民币 4月</td>
+                                    <td>9,999</td>
+                                    <td><i class="iconfont icon-icon7 btnDel ignore-elements" style="visibility:hidden" title="删除配对"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">MEG人民币 3月 - MEG人民币 4月</td>
+                                    <td>9,999</td>
+                                    <td><i class="iconfont icon-icon7 btnDel ignore-elements" style="visibility:hidden" title="删除配对"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">MEG人民币 3月 - MEG人民币 4月</td>
+                                    <td>9,999</td>
+                                    <td><i class="iconfont icon-icon7 btnDel ignore-elements" style="visibility:hidden" title="删除配对"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">MEG人民币 3月 - MEG人民币 4月</td>
+                                    <td>9,999</td>
+                                    <td><i class="iconfont icon-icon7 btnDel ignore-elements" style="visibility:hidden" title="删除配对"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">MEG人民币 3月 - MEG人民币 4月</td>
+                                    <td>9,999</td>
+                                    <td><i class="iconfont icon-icon7 btnDel ignore-elements" style="visibility:hidden" title="删除配对"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">MEG人民币 3月 - MEG人民币 4月</td>
+                                    <td>9,999</td>
+                                    <td><i class="iconfont icon-icon7 btnDel ignore-elements" style="visibility:hidden" title="删除配对"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">MEG人民币 3月 - MEG人民币 4月</td>
+                                    <td>9,999</td>
+                                    <td><i class="iconfont icon-icon7 btnDel ignore-elements" style="visibility:hidden" title="删除配对"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">MEG人民币 3月 - MEG人民币 4月</td>
+                                    <td>9,999</td>
+                                    <td><i class="iconfont icon-icon7 btnDel ignore-elements" style="visibility:hidden" title="删除配对"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">MEG人民币 3月 - MEG人民币 4月</td>
+                                    <td>9,999</td>
+                                    <td><i class="iconfont icon-icon7 btnDel ignore-elements" style="visibility:hidden" title="删除配对"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">MEG人民币 3月 - MEG人民币 4月</td>
+                                    <td>9,999</td>
+                                    <td><i class="iconfont icon-icon7 btnDel ignore-elements" style="visibility:hidden" title="删除配对"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">MEG人民币 3月 - MEG人民币 4月</td>
+                                    <td>9,999</td>
+                                    <td><i class="iconfont icon-icon7 btnDel ignore-elements" style="visibility:hidden" title="删除配对"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">MEG人民币 3月 - MEG人民币 4月</td>
+                                    <td>9,999</td>
+                                    <td><i class="iconfont icon-icon7 btnDel ignore-elements" style="visibility:hidden" title="删除配对"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="divBlock divBlockColor sortable">
+                    <div class="title">
+                        <i class="iconLeft iconfont icon-shezhi ignore-elements"></i>
+                        <span class="spanTitle">实时价差</span>
+                        <span class="grey">详情请询</span>
+                        <span>021-5155 XXXX</span>
+                        <div class="fr ignore-elements">
+                            <i class="iconfont icon-minimum" title="最小化"></i>
+                            <i class="iconfont icon-zuidahua1" title="最大化"></i>
+                            <i class="iconRight iconfont icon-guanbi" title="删除"></i>
+                        </div>
+                    </div>
+                    <div class="divFixedTitle">
+                        <ul>
+                            <li>配对</li>
+                            <li>最新价差</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="content">
+                        <table class="tbFixedTitle watermarkSpecial" width="100%">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="blue">MEG人民币 3月 - MEG人民币 4月</td>
+                                    <td>9,999</td>
+                                    <td><i class="iconfont icon-icon7 btnDel ignore-elements" style="visibility:hidden" title="删除配对"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">MEG人民币 3月 - MEG人民币 4月</td>
+                                    <td>9,999</td>
+                                    <td><i class="iconfont icon-icon7 btnDel ignore-elements" style="visibility:hidden" title="删除配对"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">MEG人民币 3月 - MEG人民币 4月</td>
+                                    <td>9,999</td>
+                                    <td><i class="iconfont icon-icon7 btnDel ignore-elements" style="visibility:hidden" title="删除配对"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">MEG人民币 3月 - MEG人民币 4月</td>
+                                    <td>9,999</td>
+                                    <td><i class="iconfont icon-icon7 btnDel ignore-elements" style="visibility:hidden" title="删除配对"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">MEG人民币 3月 - MEG人民币 4月</td>
+                                    <td>9,999</td>
+                                    <td><i class="iconfont icon-icon7 btnDel ignore-elements" style="visibility:hidden" title="删除配对"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">MEG人民币 3月 - MEG人民币 4月</td>
+                                    <td>9,999</td>
+                                    <td><i class="iconfont icon-icon7 btnDel ignore-elements" style="visibility:hidden" title="删除配对"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">MEG人民币 3月 - MEG人民币 4月</td>
+                                    <td>9,999</td>
+                                    <td><i class="iconfont icon-icon7 btnDel ignore-elements" style="visibility:hidden" title="删除配对"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">MEG人民币 3月 - MEG人民币 4月</td>
+                                    <td>9,999</td>
+                                    <td><i class="iconfont icon-icon7 btnDel ignore-elements" style="visibility:hidden" title="删除配对"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">MEG人民币 3月 - MEG人民币 4月</td>
+                                    <td>9,999</td>
+                                    <td><i class="iconfont icon-icon7 btnDel ignore-elements" style="visibility:hidden" title="删除配对"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">MEG人民币 3月 - MEG人民币 4月</td>
+                                    <td>9,999</td>
+                                    <td><i class="iconfont icon-icon7 btnDel ignore-elements" style="visibility:hidden" title="删除配对"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">MEG人民币 3月 - MEG人民币 4月</td>
+                                    <td>9,999</td>
+                                    <td><i class="iconfont icon-icon7 btnDel ignore-elements" style="visibility:hidden" title="删除配对"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="blue">MEG人民币 3月 - MEG人民币 4月</td>
+                                    <td>9,999</td>
+                                    <td><i class="iconfont icon-icon7 btnDel ignore-elements" style="visibility:hidden" title="删除配对"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="hide" id="templateBlockQuotes">
+                <div class="divBlock divBlockQuotes sortable">
+                    <div class="title">
+                        <i class="iconLeft iconfont icon-shezhi ignore-elements"></i>
+                        <span class="spanTitle">现货（纯苯）</span>
+                        <span class="grey">详情请询</span>
+                        <span>021-5155 XXXX</span>
+                        <div class="fr ignore-elements">
+                            <i class="iconfont icon-minimum" title="最小化"></i>
+                            <i class="iconfont icon-zuidahua1" title="最大化"></i>
+                            <i class="iconRight iconfont icon-guanbi" title="删除"></i>
+                        </div>
+                    </div>
+                    <div class="divFixedTitle">
+                        <ul>
+                            <li>币种</li>
+                            <li>交易期限</li>
+                            <li>方向</li>
+                            <li>数量</li>
+                            <li>价格</li>
+                            <li>时间</li>
+                        </ul>
+                    </div>
+                    <div class="content">
+                        <table class="tbFixedTitle watermarkSpecial" width="100%">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="hide" id="templateBlockColor">
+                <div class="divBlock divBlockColor sortable">
+                    <div class="title">
+                        <i class="iconLeft iconfont icon-shezhi ignore-elements"></i>
+                        <span class="spanTitle">实时价差</span>
+                        <span class="grey">详情请询</span>
+                        <span>021-5155 XXXX</span>
+                        <div class="fr ignore-elements">
+                            <i class="iconfont icon-minimum" title="最小化"></i>
+                            <i class="iconfont icon-zuidahua1" title="最大化"></i>
+                            <i class="iconRight iconfont icon-guanbi" title="删除"></i>
+                        </div>
+                    </div>
+                    <div class="divFixedTitle">
+                        <ul>
+                            <li>配对</li>
+                            <li>最新价差</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div class="content">
+                        <table class="tbFixedTitle watermarkSpecial" width="100%">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-dialog" id="modalSetQuotes" style="width:750px;">
+                <div class="modal-header">行情设置<i class="fr iconfont icon-guanbi"></i></div>
+                <div class="modal-body" style="text-align:center">
+                    <br>
+                    <ul class="ulColorBlock">
+                        <li>
+                            <p class="bgOrange">现货</p>
+                            <button class="whiteOrangeBtnOk" type="button">SM<i class="iconfont icon-xuanzejiaobiao"></i></button>
+                            <button class="whiteOrangeBtn" type="button">MEG</button>
+                            <button class="whiteOrangeBtn" type="button">MEOH</button>
+                            <button class="whiteOrangeBtn" type="button">甲苯</button>
+                            <button class="whiteOrangeBtn" type="button">纯苯</button>
+                            <button class="whiteOrangeBtnOk" type="button">混合二甲苯（异构）<i class="iconfont icon-xuanzejiaobiao"></i></button>
+                            <button class="whiteOrangeBtn" type="button">纯苯</button>
+                            <br> <br>
+                        </li>
+                        <li>
+                            <p class="bgBlue">掉期</p>
+                            <button class="whiteBlueBtn" type="button">SM</button>
+                            <button class="whiteBlueBtn" type="button">MEG</button>
+                            <button class="whiteBlueBtn" type="button">MEOH</button>
+                            <button class="whiteBlueBtnOk" type="button">甲苯<i class="iconfont icon-xuanzejiaobiao"></i></button>
+                            <button class="whiteBlueBtn" type="button">纯苯</button>
+                            <button class="whiteBlueBtn" type="button">混合二甲苯（异构）</button>
+                            <button class="whiteBlueBtn" type="button">纯苯</button>
+                            <br> <br>
+                        </li>
+                        <li>
+                            <p class="bgGreen">自贸区</p>
+                            <button class="whiteGreenBtnOk" type="button">SM<i class="iconfont icon-xuanzejiaobiao"></i></button>
+                            <button class="whiteGreenBtn" type="button">MEG</button>
+                            <button class="whiteGreenBtn" type="button">MEOH</button>
+                            <button class="whiteGreenBtn" type="button">甲苯</button>
+                            <button class="whiteGreenBtn" type="button">纯苯</button>
+                            <button class="whiteGreenBtn" type="button">混合二甲苯（异构）</button>
+                            <button class="whiteGreenBtn" type="button">纯苯</button>
+                            <br> <br>
+                        </li>
+                    </ul>
+                    <div class="divOperate">
+                        <button class="btn btn-primary" style="width:120px" type="button">保存</button>&nbsp;&nbsp;
+                        <button class="btn btn-default cancel" style="width:120px" type="button">取消</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-dialog" id="modalFilterQuotes" style="width:650px;">
+                <div class="modal-header">交易期限设置——<span></span><i class="fr iconfont icon-guanbi"></i></div>
+                <div class="modal-body" style="text-align:center">
+                    <br>
+                    <div class="divColorBtn">
+                        <button class="whiteBlueBtn" type="button">1801</button>
+                        <button class="whiteBlueBtn" type="button">1802</button>
+                        <button class="whiteBlueBtn" type="button">1803</button>
+                        <button class="whiteBlueBtn" type="button">1804</button>
+                        <button class="whiteBlueBtn" type="button">1805</button>
+                        <button class="whiteBlueBtn" type="button">1806</button>
+                        <button class="whiteBlueBtnOk" type="button">1807<i class="iconfont icon-xuanzejiaobiao"></i></button>
+                        <button class="whiteBlueBtn" type="button">1808</button>
+                        <button class="whiteBlueBtn" type="button">1809</button>
+                        <button class="whiteBlueBtnOk" type="button">1810<i class="iconfont icon-xuanzejiaobiao"></i></button>
+                        <button class="whiteBlueBtn" type="button">1811</button>
+                        <button class="whiteBlueBtn" type="button">1812</button>
+                    </div>
+                    <div class="divOperate">
+                        <button class="btn btn-primary" style="width:120px" type="button">保存</button>&nbsp;&nbsp;
+                        <button class="btn btn-default cancel" style="width:120px" type="button">取消</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-dialog" id="modalAddPair" style="width:550px;">
+                <div class="modal-header">添加配对<i class="fr iconfont icon-guanbi"></i></div>
+                <div class="modal-body" style="text-align:center">
+                    <br>
+                    <!--<p class="leftPadding20">第一腿：</p>-->
+                    <div class="divTipBlue">
+                        <select class="selectGrey selCurrency" style="width:180px">
+                            <option value="1">现货RMB1</option>
+                            <option value="2">现货RMB2</option>
+                            <option value="3">现货RMB3</option>
+                            </select>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <select class="selectGrey selItem" style="width:120px">
+                            <option value="1">MEG1</option>
+                            <option value="2">MEG2</option>
+                            <option value="3">MEG3</option>
+                            </select>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <select class="selectGrey selDate" style="width:120px">
+                            <option value="1">四月上</option>
+                            <option value="2">四月下</option>
+                            <option value="3">五月上</option>
+                            </select>
+                    </div>
+                    <!--<p class="leftPadding20">第二腿：</p>-->
+                    <div class="divTipOrange">
+                        <select class="selectGrey selCurrency" style="width:180px">
+                            <option value="1">现货RMB1</option>
+                            <option value="2">现货RMB2</option>
+                            <option value="3">现货RMB3</option>
+                            </select>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <select class="selectGrey selItem" style="width:120px">
+                            <option value="1">MEG1</option>
+                            <option value="2">MEG2</option>
+                            <option value="3">MEG3</option>
+                            </select>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <select class="selectGrey selDate" style="width:120px">
+                            <option value="1">四月上</option>
+                            <option value="2">四月下</option>
+                            <option value="3">五月上</option>
+                            </select>
+                    </div>
+                    <div class="divOperate">
+                        <button class="btn btn-primary btnSave" style="width:120px" type="button">保存</button>&nbsp;&nbsp;
+                        <button class="btn btn-default cancel" style="width:120px" type="button">取消</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="divFootMenu">
+        <div class="divFixedWidth">
+            <a href="#">公司简介</a>
+            <span>|</span>
+            <a href="#">发展历程</a>
+            <span>|</span>
+            <a href="#">诚聘英才</a>
+            <span>|</span>
+            <a href="#">联系我们</a>
+            <span>|</span>
+            <a href="#"> 法律声明</a>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <a href="#">友情链接</a>
+            <a href="#">易贸集团</a>
+            <a href="#">上海自贸区</a>
+            <a href="#">上海化交</a>
+        </div>
+    </div>
+    <div class="divFoot">
+        <div class="divFixedWidth">
+            Copyright 2018 ENMORE 易贸 沪ICP备10003311号-12
+        </div>
+    </div>
+    <div class="modal-dialog-mask" id="modal-dialog-mask"> </div>
+    <script src="../js/lib/jquery-3.3.1.min.js"></script>
+    <script src="../js/lib/echarts.js"></script>
+    <script src="../js/lib/layer/layer.js"></script>
+    <script src="../js/lib/scrollBar.js"></script>
+    <script src="../js/lib/laydate/laydate.js"></script>
+    <script src="../js/lib/Sortable.js"></script>
+    <script src="../js/utils/emaiBase.js"></script>
+    <script src="../js/utils/layout.js"></script>
+    <script src="../js/page/realtimeQuotes.js"></script>
+</body>
+
+</html>

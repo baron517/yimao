@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>最优价格</title>
+    <link rel="stylesheet" type="text/css" href="../css/font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+</head>
+
+<body>
+    <div class="divHead">
+        <div class="divFixedWidth">
+            <div class="divHeadLogo"><a href="#this"><span class="logo"></span</a></div>
+            <div class="divHeadMenu">
+                <ul>
+                    <li>
+                        <a class="iconfont icon-shouye" href="./bestPrice.html"> <span>首页</span></a>
+                    </li>
+                    <li class="active">
+                        <a class="iconfont icon-fenlei" href="./bestPrice.html"> <span>最优价格</span></a>
+                    </li>
+                    <li>
+                        <a class="iconfont icon-gupiao" href="./realtimeQuotes.html"> <span>实时行情</span></a>
+                    </li>
+                    <li>
+                        <a class="iconfont icon-lishijilu" href="./historyQuantity.html"> <span>历史行情</span></a>
+                    </li>
+                    <li>
+                        <a class="iconfont icon-fuzhi " href="./indexNumber.html"> <span>易通指数</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="divHeadRight">
+                <ul>
+                    <li class="pr"><a href="myCenter.html"><i class="personage"></i><i class="yes"></i></a></li>
+                    <li><a href="#this"><i class="exit"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="divMain">
+        <div class="divFixedWidth">
+            <br>
+            <button class="platBtn iconfont icon-shezhi" type="button" id="btnSet"> 设置</button>
+            <!--<div class="setting iconfont icon-shezhi">设置<i class="iconfont icon-plus-select-down"></i></div>-->
+            <br><br>
+            <div class="divTbWidthTitle">
+                <div class="title">现货</div>
+                <table class="watermarkSpecial">
+                    <thead>
+                        <tr>
+                            <th>品目</th>
+                            <th>货物类型</th>
+                            <th>最优买盘</th>
+                            <th>最优卖盘</th>
+                            <th>最新成交价</th>
+                            <th>查看</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SM</td>
+                            <td>人民币现货</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td><a href="#this" class="blueLink btnRealTimePrice">实时价格</a></td>
+                        </tr>
+                        <tr>
+                            <td>SM</td>
+                            <td>人民币现货</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td><a href="#this" class="blueLink btnRealTimePrice">实时价格</a></td>
+                        </tr>
+                        <tr>
+                            <td>SM</td>
+                            <td>人民币现货</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td><a href="#this" class="blueLink btnRealTimePrice">实时价格</a></td>
+                        </tr>
+                        <tr>
+                            <td>SM</td>
+                            <td>人民币现货</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td><a href="#this" class="blueLink btnRealTimePrice">实时价格</a></td>
+                        </tr>
+                        <tr>
+                            <td>SM</td>
+                            <td>人民币现货</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td><a href="#this" class="blueLink btnRealTimePrice">实时价格</a></td>
+                        </tr>
+                        <tr>
+                            <td>SM</td>
+                            <td>人民币现货</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td><a href="#this" class="blueLink btnRealTimePrice">实时价格</a></td>
+                        </tr>
+                        <tr>
+                            <td>SM</td>
+                            <td>人民币现货</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td><a href="#this" class="blueLink btnRealTimePrice">实时价格</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+            <div class="divTbWidthTitle">
+                <div class="title">掉期</div>
+                <table class="watermarkSpecial">
+                    <thead>
+                        <tr>
+                            <th>品目</th>
+                            <th>货物类型</th>
+                            <th>最优买盘</th>
+                            <th>最优卖盘</th>
+                            <th>最新成交价</th>
+                            <th>查看</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SM</td>
+                            <td>人民币现货</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td><a href="#this" class="blueLink btnRealTimePrice">实时价格</a></td>
+                        </tr>
+                        <tr>
+                            <td>SM</td>
+                            <td>人民币现货</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td><a href="#this" class="blueLink btnRealTimePrice">实时价格</a></td>
+                        </tr>
+                        <tr>
+                            <td>SM</td>
+                            <td>人民币现货</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td><a href="#this" class="blueLink btnRealTimePrice">实时价格</a></td>
+                        </tr>
+                        <tr>
+                            <td>SM</td>
+                            <td>人民币现货</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td><a href="#this" class="blueLink btnRealTimePrice">实时价格</a></td>
+                        </tr>
+                        <tr>
+                            <td>SM</td>
+                            <td>人民币现货</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td><a href="#this" class="blueLink btnRealTimePrice">实时价格</a></td>
+                        </tr>
+                        <tr>
+                            <td>SM</td>
+                            <td>人民币现货</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td><a href="#this" class="blueLink btnRealTimePrice">实时价格</a></td>
+                        </tr>
+                        <tr>
+                            <td>SM</td>
+                            <td>人民币现货</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td><a href="#this" class="blueLink btnRealTimePrice">实时价格</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+            <div class="divTbWidthTitle">
+                <div class="title">自贸区</div>
+                <table class="watermarkSpecial">
+                    <thead>
+                        <tr>
+                            <th>品目</th>
+                            <th>货物类型</th>
+                            <th>最优买盘</th>
+                            <th>最优卖盘</th>
+                            <th>最新成交价</th>
+                            <th>查看</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>SM</td>
+                            <td>人民币现货</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td><a href="#this" class="blueLink btnRealTimePrice">实时价格</a></td>
+                        </tr>
+                        <tr>
+                            <td>SM</td>
+                            <td>人民币现货</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td><a href="#this" class="blueLink btnRealTimePrice">实时价格</a></td>
+                        </tr>
+                        <tr>
+                            <td>SM</td>
+                            <td>人民币现货</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td><a href="#this" class="blueLink btnRealTimePrice">实时价格</a></td>
+                        </tr>
+                        <tr>
+                            <td>SM</td>
+                            <td>人民币现货</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td><a href="#this" class="blueLink btnRealTimePrice">实时价格</a></td>
+                        </tr>
+                        <tr>
+                            <td>SM</td>
+                            <td>人民币现货</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td><a href="#this" class="blueLink btnRealTimePrice">实时价格</a></td>
+                        </tr>
+                        <tr>
+                            <td>SM</td>
+                            <td>人民币现货</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td><a href="#this" class="blueLink btnRealTimePrice">实时价格</a></td>
+                        </tr>
+                        <tr>
+                            <td>SM</td>
+                            <td>人民币现货</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td>99,999</td>
+                            <td><a href="#this" class="blueLink btnRealTimePrice">实时价格</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br>
+            <div class="divTelephone">
+                购买或续费请拨打
+                <P>
+                    400-820-1234
+                </P>
+            </div>
+            <br><br><br>
+            <div class="modal-dialog" id="modalRealtimePrice" style="width:1180px;">
+                <div class="modal-header">现货（纯苯）<i class="fr iconfont icon-guanbi"></i></div>
+                <div class="modal-body">
+                    <div class="divFixedTitle">
+                        <ul>
+                            <li>币种</li>
+                            <li>交易期限</li>
+                            <li>方向</li>
+                            <li>数量</li>
+                            <li>价格</li>
+                            <li>时间</li>
+                            <li>库区</li>
+                            <li>保证金</li>
+                            <li>备注</li>
+                        </ul>
+                    </div>
+                    <div style="height:366px;overflow:auto;" id="divRealPriceScroll">
+                        <table class="tbFixedTitle" width="100%">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>人民币</td>
+                                    <td>1803</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                    <td>张家港</td>
+                                    <td></td>
+                                    <td>现货69%</td>
+                                </tr>
+                                <tr>
+                                    <td>人民币</td>
+                                    <td>1803</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                    <td>张家港</td>
+                                    <td></td>
+                                    <td>现货69%</td>
+                                </tr>
+
+                                <tr>
+                                    <td>人民币</td>
+                                    <td>1803</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                    <td>张家港</td>
+                                    <td>10%</td>
+                                    <td>现货69%</td>
+                                </tr>
+                                <tr>
+                                    <td>人民币</td>
+                                    <td>1803</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                    <td>张家港</td>
+                                    <td>10%</td>
+                                    <td>现货69%</td>
+                                </tr>
+                                <tr>
+                                    <td>人民币</td>
+                                    <td>1803</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                    <td>张家港</td>
+                                    <td>10%</td>
+                                    <td>现货69%</td>
+                                </tr>
+                                <tr>
+                                    <td>人民币</td>
+                                    <td>1803</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                    <td>张家港</td>
+                                    <td>10%</td>
+                                    <td>现货69%</td>
+                                </tr>
+                                <tr>
+                                    <td>人民币</td>
+                                    <td>1803</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                    <td>张家港</td>
+                                    <td>10%</td>
+                                    <td>现货69%</td>
+                                </tr>
+                                <tr>
+                                    <td>人民币</td>
+                                    <td>1803</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                    <td>张家港</td>
+                                    <td>10%</td>
+                                    <td>现货69%</td>
+                                </tr>
+                                <tr>
+                                    <td>人民币</td>
+                                    <td>1803</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                    <td>张家港</td>
+                                    <td>10%</td>
+                                    <td>现货69%</td>
+                                </tr>
+                                <tr>
+                                    <td>人民币</td>
+                                    <td>1803</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                    <td>张家港</td>
+                                    <td>10%</td>
+                                    <td>现货69%</td>
+                                </tr>
+                                <tr>
+                                    <td>人民币</td>
+                                    <td>1803</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                    <td>张家港</td>
+                                    <td>10%</td>
+                                    <td>现货69%</td>
+                                </tr>
+                                <tr>
+                                    <td>人民币</td>
+                                    <td>1803</td>
+                                    <td>买</td>
+                                    <td>999</td>
+                                    <td>10101</td>
+                                    <td>10.26</td>
+                                    <td>张家港</td>
+                                    <td>10%</td>
+                                    <td>现货69%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-dialog" id="modalSet" style="width:750px;">
+                <div class="modal-header">设置<i class="fr iconfont icon-guanbi"></i></div>
+                <div class="modal-body" style="text-align:center">
+                    <br>
+                    <ul class="ulColorBlock">
+                        <li>
+                            <p class="bgOrange">现货</p>
+                            <button class="whiteOrangeBtnOk" type="button">SM<i class="iconfont icon-xuanzejiaobiao"></i></button>
+                            <button class="whiteOrangeBtn" type="button">MEG</button>
+                            <button class="whiteOrangeBtn" type="button">MEOH</button>
+                            <button class="whiteOrangeBtn" type="button">甲苯</button>
+                            <button class="whiteOrangeBtn" type="button">纯苯</button>
+                            <button class="whiteOrangeBtnOk" type="button">混合二甲苯（异构）<i class="iconfont icon-xuanzejiaobiao"></i></button>
+                            <button class="whiteOrangeBtn" type="button">纯苯</button>
+                            <br> <br>
+                        </li>
+                        <li>
+                            <p class="bgBlue">掉期</p>
+                            <button class="whiteBlueBtn" type="button">SM</button>
+                            <button class="whiteBlueBtn" type="button">MEG</button>
+                            <button class="whiteBlueBtn" type="button">MEOH</button>
+                            <button class="whiteBlueBtnOk" type="button">甲苯<i class="iconfont icon-xuanzejiaobiao"></i></button>
+                            <button class="whiteBlueBtn" type="button">纯苯</button>
+                            <button class="whiteBlueBtn" type="button">混合二甲苯（异构）</button>
+                            <button class="whiteBlueBtn" type="button">纯苯</button>
+                            <br> <br>
+                        </li>
+                        <li>
+                            <p class="bgGreen">自贸区</p>
+                            <button class="whiteGreenBtnOk" type="button">SM<i class="iconfont icon-xuanzejiaobiao"></i></button>
+                            <button class="whiteGreenBtn" type="button">MEG</button>
+                            <button class="whiteGreenBtn" type="button">MEOH</button>
+                            <button class="whiteGreenBtn" type="button">甲苯</button>
+                            <button class="whiteGreenBtn" type="button">纯苯</button>
+                            <button class="whiteGreenBtn" type="button">混合二甲苯（异构）</button>
+                            <button class="whiteGreenBtn" type="button">纯苯</button>
+                            <br> <br>
+                        </li>
+                    </ul>
+                    <div class="divOperate">
+                        <button class="btn btn-primary" style="width:120px" type="button">保存</button>&nbsp;&nbsp;
+                        <button class="btn btn-default cancel" style="width:120px" type="button">取消</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divFootMenu">
+        <div class="divFixedWidth">
+            <a href="#">公司简介</a>
+            <span>|</span>
+            <a href="#">发展历程</a>
+            <span>|</span>
+            <a href="#">诚聘英才</a>
+            <span>|</span>
+            <a href="#">联系我们</a>
+            <span>|</span>
+            <a href="#"> 法律声明</a>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <a href="#">友情链接</a>
+            <a href="#">易贸集团</a>
+            <a href="#">上海自贸区</a>
+            <a href="#">上海化交</a>
+        </div>
+    </div>
+    <div class="divFoot">
+        <div class="divFixedWidth">
+            Copyright 2018 ENMORE 易贸 沪ICP备10003311号-12
+        </div>
+    </div>
+    <div class="modal-dialog-mask" id="modal-dialog-mask"> </div>
+    <script src="../js/lib/jquery-3.3.1.min.js"></script>
+    <script src="../js/lib/layer/layer.js"></script>
+    <script src="../js/lib/scrollBar.js"></script>
+    <script src="../js/utils/emaiBase.js"></script>
+    <script src="../js/utils/layout.js"></script>
+    <script src="../js/page/bestPrice.js"></script>
+</body>
+
+</html>

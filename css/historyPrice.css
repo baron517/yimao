@@ -1,0 +1,128 @@
+.divHistoryPriceLeft{width:257px;float: left;}
+.divHistoryPriceRight{margin-left:277px;background: white;}
+.ulDot{border-bottom: 1px solid #dadada;height:80px;width:100%;cursor:pointer;}
+#divLeftColor{height:477px;overflow: auto}
+.ulDot:hover{background:#f8fafe }
+.ulDot li{float:left;line-height:80px;padding-left: 10px;}
+.ulDot li:last-child{float:right;padding-right:10px;color:#444}
+.ulDot li:last-child:hover{color:#000}
+.ulDot li p{line-height:20px;margin-top:20px;font-size:12px}
+.charts_main1 {
+  position: relative;
+  left: 0px;  
+}
+.charts_main1 .l {
+  width: 10px;
+  top: 86px;
+  position: absolute;
+  background: white;
+  height: 410px;
+  left: 1px;
+  z-index: 3;
+}
+.charts_main1 .b {
+  width: 824px;
+  position: absolute;
+  background: white;
+  height: 9px;
+  bottom: 51px;
+  z-index: 2;
+  left:1px;
+  top: 462px;
+}
+.charts_main1 div:last-child {
+  width: 0;
+  height: 0;
+}
+.guides {
+  position: absolute;
+  width: 236px;
+  height: 25px;
+  left:600px;
+  top: 25px;
+  border-radius: 25px;
+  background-color: #f4f7fe;
+  z-index: 3;
+}
+.guides span {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.guides .guides_active {
+  background-color: #0078e0;
+  color: #fff;
+}
+.guides_bottom {
+  border-bottom: 1px  dashed #000;
+  position: absolute;
+  z-index: 2;
+  width: 817px;
+  top: 128px;
+  height: 1px;
+  left: 1px;
+}
+.guides_bottom span {
+  z-index: 2;
+  position: absolute;
+  right: -43px;
+  top: -6px;
+}
+.guides95 {
+  top: 143px;
+}
+.guides80 {
+  top: 241px;
+}
+.guides65 {
+  top: 339px;
+}
+.guides_titile {
+  position: absolute;
+  left: 400px;
+  z-index: 3;
+  top: 26px;
+  font-size: 16px;
+  color: #4b4b4b;
+}
+.date2 i {
+  position: absolute;
+  z-index: 99;
+  width: 18px;
+  height: 16px;
+}
+.date2 i:nth-child(1) {
+  right: 170px;
+  top: 53px;
+  font-size: 12px;
+  z-index: 100;
+}
+.date2 i:nth-child(2) {
+  right: 340px;
+  top: 53px;
+  font-size: 12px;
+  z-index: 100;
+}
+.date2 input:nth-child(4) {
+  position: absolute;
+  border: 1px solid #f0eaec;
+  width: 150px;
+  height: 26px;
+  right: 43px;
+  top: 45px;
+  z-index: 99;
+  text-indent: 16px;
+}
+.date2 input:nth-child(3) {
+  position: absolute;
+  border: 1px solid #f0eaec;
+  width: 150px;
+  height: 26px;
+  right: 212px;
+  top: 45px;
+  z-index: 99;
+  text-indent: 16px;
+}

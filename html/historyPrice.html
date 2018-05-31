@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>历史价差</title>
+    <link rel="stylesheet" type="text/css" href="../css/font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/historyPrice.css">
+</head>
+
+<body>
+    <div class="divHead">
+        <div class="divFixedWidth">
+            <div class="divHeadLogo"><a href="#this"><span class="logo"></span</a></div>
+            <div class="divHeadMenu">
+                <ul>
+                    <li>
+                        <a class="iconfont icon-shouye" href="./bestPrice.html"> <span>首页</span></a>
+                    </li>
+                    <li>
+                        <a class="iconfont icon-fenlei" href="./bestPrice.html"> <span>最优价格</span></a>
+                    </li>
+                    <li>
+                        <a class="iconfont icon-gupiao" href="./realtimeQuotes.html"> <span>实时行情</span></a>
+                    </li>
+                    <li class="active">
+                        <a class="iconfont icon-lishijilu" href="./historyQuantity.html"> <span>历史行情</span></a>
+                    </li>
+                    <li>
+                        <a class="iconfont icon-fuzhi " href="./indexNumber.html"> <span>易通指数</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="divHeadRight">
+                <ul>
+                    <li class="pr"><a href="myCenter.html"><i class="personage"></i><i class="yes"></i></a></li>
+                    <li><a href="#this"><i class="exit"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="divHeadSecond">
+        <div class="divFixedWidth">
+            <a href="historyQuantity.html">历史量价</a>
+            <a href="historyPrice.html" class="active">历史价差</a>
+        </div>
+    </div>
+    <div class="divMain">
+        <div class="divFixedWidth">
+            <br> <br>
+            <div class="divHistoryPriceLeft divBlueFrameCompact">
+                <div class="title">请选择配对 <button class="btn btn-info btn-sm iconfont icon-jia fr" type="submit" id="btnAddPair"> 添加</button></div>
+                <div id="divLeftColor">
+
+                    <ul class="ulDot grey">
+                        <li><i class="iconfont icon-queren"></i></li>
+                        <li>
+                            <p>MEG 人民币 5月<br>MEG 人民币 6月222243434</p>
+                        </li>
+                        <li><i class="iconfont icon-icon7 btnDel" style="display:none"></i></li>
+                    </ul>
+
+
+                    <ul class="ulDot grey">
+                        <li><i class="iconfont icon-queren"></i></li>
+                        <li>
+                            <p>MEG 人民币 5月<br>MEG 人民币 6月2222</p>
+                        </li>
+                        <li><i class="iconfont icon-icon7 btnDel" style="display:none"></i></li>
+                    </ul>
+
+                    <ul class="ulDot grey">
+                        <li><i class="iconfont icon-queren"></i></li>
+                        <li>
+                            <p>MEG 人民币 5月<br>混合二甲苯 人民币 12月下</p>
+                        </li>
+                        <li><i class="iconfont icon-icon7 btnDel" style="display:none"></i></li>
+                    </ul>
+
+                    <ul class="ulDot grey">
+                        <li><i class="iconfont icon-queren"></i></li>
+                        <li>
+                            <p>MEG 人民币 5月<br>MEG 人民币 6月</p>
+                        </li>
+                        <li><i class="iconfont icon-icon7 btnDel" style="display:none"></i></li>
+                    </ul>
+
+                    <ul class="ulDot grey">
+                        <li><i class="iconfont icon-queren"></i></li>
+                        <li>
+                            <p>MEG 人民币 5月<br>MEG 人民币 6月</p>
+                        </li>
+                        <li><i class="iconfont icon-icon7 btnDel" style="display:none"></i></li>
+                    </ul>
+
+                    <ul class="ulDot grey">
+                        <li><i class="iconfont icon-queren"></i></li>
+                        <li>
+                            <p>MEG 人民币 5月<br>混合二甲苯 人民币 12月下</p>
+                        </li>
+                        <li><i class="iconfont icon-icon7 btnDel" style="display:none"></i></li>
+                    </ul>
+
+                    <ul class="ulDot grey">
+                        <li><i class="iconfont icon-queren"></i></li>
+                        <li>
+                            <p>MEG 人民币 5月<br>MEG 人民币 6月</p>
+                        </li>
+                        <li><i class="iconfont icon-icon7 btnDel" style="display:none"></i></li>
+                    </ul>
+
+                    <ul class="ulDot grey">
+                        <li><i class="iconfont icon-queren"></i></li>
+                        <li>
+                            <p>MEG 人民币 5月<br>MEG 人民币 6月</p>
+                        </li>
+                        <li><i class="iconfont icon-icon7 btnDel" style="display:none"></i></li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="divHistoryPriceRight">
+                <div class="charts_main1">
+                    <div class="guides_titile">SMvolume</div>
+                    <div class="guides">
+                        <span>95%</span>
+                        <span class="guides_active">80%</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="l"></div>
+                    <div class="b"></div>
+                    <div class="guides95 guides_bottom"><span>95%</span></div>
+                    <div class="guides80 guides_bottom"><span>80%</span></div>
+                    <div class="guides65 guides_bottom"><span>65%</span></div>
+                    <div>
+                        <div id="main1" style="border: 1px solid #ccc;background:#fff;;width: 895px;height:443px;position: relative;right: 0px;padding-top:77px"></div>
+                    </div>
+                </div>
+                <div class="modal-dialog" id="modalAddPair" style="width:550px;">
+                    <div class="modal-header">添加配对<i class="fr iconfont icon-guanbi"></i></div>
+                    <div class="modal-body" style="text-align:center">
+                        <br>
+                        <!--<p class="leftPadding20">第一腿：</p>-->
+                        <div class="divTipBlue">
+                            <select class="selectGrey selCurrency" style="width:180px">
+                            <option value="1">现货RMB1</option>
+                            <option value="2">现货RMB2</option>
+                            <option value="3">现货RMB3</option>
+                            </select>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <select class="selectGrey selItem" style="width:120px">
+                            <option value="1">MEG1</option>
+                            <option value="2">MEG2</option>
+                            <option value="3">MEG3</option>
+                            </select>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <select class="selectGrey selDate" style="width:120px">
+                            <option value="1">四月上</option>
+                            <option value="2">四月下</option>
+                            <option value="3">五月上</option>
+                            </select>
+                        </div>
+                        <!--<p class="leftPadding20">第二腿：</p>-->
+                        <div class="divTipOrange">
+                            <select class="selectGrey selCurrency" style="width:180px">
+                            <option value="1">现货RMB1</option>
+                            <option value="2">现货RMB2</option>
+                            <option value="3">现货RMB3</option>
+                            </select>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <select class="selectGrey selItem" style="width:120px">
+                            <option value="1">MEG1</option>
+                            <option value="2">MEG2</option>
+                            <option value="3">MEG3</option>
+                            </select>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <select class="selectGrey selDate" style="width:120px">
+                            <option value="1">四月上</option>
+                            <option value="2">四月下</option>
+                            <option value="3">五月上</option>
+                            </select>
+                        </div>
+                        <div class="divOperate">
+                            <button class="btn btn-primary btnSave" style="width:120px" type="button">保存</button>&nbsp;&nbsp;
+                            <button class="btn btn-default cancel" style="width:120px" type="button">取消</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divFootMenu">
+        <div class="divFixedWidth">
+            <a href="#">公司简介</a>
+            <span>|</span>
+            <a href="#">发展历程</a>
+            <span>|</span>
+            <a href="#">诚聘英才</a>
+            <span>|</span>
+            <a href="#">联系我们</a>
+            <span>|</span>
+            <a href="#"> 法律声明</a>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <a href="#">友情链接</a>
+            <a href="#">易贸集团</a>
+            <a href="#">上海自贸区</a>
+            <a href="#">上海化交</a>
+        </div>
+    </div>
+    <div class="divFoot">
+        <div class="divFixedWidth">
+            Copyright 2018 ENMORE 易贸 沪ICP备10003311号-12
+        </div>
+    </div>
+    <div class="modal-dialog-mask" id="modal-dialog-mask"> </div>
+    <script src="../js/lib/jquery-3.3.1.min.js"></script>
+    <script src="../js/lib/echarts.js"></script>
+    <script src="../js/lib/layer/layer.js"></script>
+    <script src="../js/lib/scrollBar.js"></script>
+    <script src="../js/lib/laydate/laydate.js"></script>
+    <script src="../js/utils/emaiBase.js"></script>
+    <script src="../js/utils/layout.js"></script>
+    <script src="../js/page/historyPrice.js"></script>
+</body>
+
+</html>
