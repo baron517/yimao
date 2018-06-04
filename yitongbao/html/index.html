@@ -360,6 +360,39 @@
         </div>
     </div>
 
+    <div class="sidetoolbar">
+        <div class="toolbar">
+            <a class="toolbar-section toolbar-section-tell">
+                <i class="icon-col icon-tell-col"></i>
+                <div class="toolbar-section-inner">
+                    联系我们
+                </div>
+            </a>
+
+            <a class="toolbar-section toolbar-section-write">
+                <i class="icon-col icon-login-col"></i>
+                <div class="toolbar-section-inner">
+                    登录
+                </div>
+            </a>
+
+            <a class="toolbar-section toolbar-section-write">
+                <i class="icon-col icon-reg-col"></i>
+                <div class="toolbar-section-inner">
+                    注册
+                </div>
+            </a>
+
+            <a class="toolbar-section toolbar-section-totop">
+                <i class="icon-col icon-totop-col"></i>
+                <div class="toolbar-section-inner">
+                    顶部
+                </div>
+            </a>
+        </div>
+
+    </div>
+
 
 </div>
 
@@ -367,6 +400,62 @@
 <script src="../js/lib/jquery-3.3.1.min.js"></script>
 <script src="../js/utils/emaiBase.js"></script>
 <script src="../js/utils/layout.js"></script>
+
+<script>
+
+
+    $(".sidetoolbar .toolbar .toolbar-section").mouseenter(function()
+    {
+
+        $(this).addClass("active");
+
+        $(this).find(".toolbar-section-inner").stop();
+
+        if($(this).hasClass("toolbar-section-tell"))
+        {
+            $(this).find(".toolbar-section-inner").animate({"left":"-69px"},function()
+            {
+
+            });
+        }
+        else
+        {
+            $(this).find(".toolbar-section-inner").animate({"left":"-59px"});
+        }
+
+    }).mouseleave(function()
+    {
+        $(this).removeClass("active");
+
+        $(this).find(".toolbar-section-inner").stop();
+
+        $(this).find(".toolbar-section-inner").animate({"left":"0"});
+    });
+
+    $(window).scroll(function(e)
+    {
+
+        scrollToTop();
+
+    });
+
+    scrollToTop();
+
+    function scrollToTop()
+    {
+        if($(window).scrollTop()==0)
+        {
+            $(".toolbar-section-totop").hide();
+        }
+        else
+        {
+            $(".toolbar-section-totop").show();
+        }
+    }
+
+
+</script>
+
 </body>
 
 </html>
