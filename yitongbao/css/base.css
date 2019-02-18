@@ -1088,9 +1088,9 @@ select option{color:#EA5400;}*/
   margin-left: 10px;
 }
 
-.sidetoolbar .toolbar .toolbar-section .icon-col{display: inline-block;width:36px;height:36px;}
+.sidetoolbar .toolbar .toolbar-section .icon-col{display: inline-block;width:28px;height:28px;margin:4px auto;}
 .sidetoolbar .toolbar .toolbar-section .icon-tell-col{background: url("../img/kefu.png")}
 .sidetoolbar .toolbar .toolbar-section .icon-login-col{background: url("../img/denglu.png")}
 .sidetoolbar .toolbar .toolbar-section .icon-reg-col{background: url("../img/zhuce.png")}
-.sidetoolbar .toolbar .toolbar-section .icon-icon-totop-col-col{background: url("../img/shangjiantou.png")}
+.sidetoolbar .toolbar .toolbar-section .icon-totop-col{background: url("../img/shangjiantou.png")}
 

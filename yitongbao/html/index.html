@@ -452,6 +452,11 @@
             $(".toolbar-section-totop").show();
         }
     }
+	
+	$(".toolbar-section-totop").click(function()
+	{
+		$("html,body").finish().animate({"scrollTop":"0px"},500);
+	});
 
 
 </script>
